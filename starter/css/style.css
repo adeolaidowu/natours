@@ -7,10 +7,12 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
@@ -24,6 +26,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 3rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -86,11 +89,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -102,11 +105,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -118,7 +121,7 @@ body {
 @keyframes moveInBottomUp {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10rem);
   }
 
   100% {
@@ -134,7 +137,7 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   transition: all 0.2s;
-  border-radius: 80px;
+  border-radius: 8rem;
   position: relative;
   animation: moveInBottomUp 1s ease 1s backwards;
 }
@@ -145,12 +148,12 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.3rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-  transform: translateY(-1px);
+  transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
@@ -163,7 +166,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  border-radius: 80px;
+  border-radius: 8rem;
   transition: all 0.8s;
   background-color: #fff;
 }
