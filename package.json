@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": "https://github.com/adeolaidowu/natours.git",
+  "author": "adeola idowu <adeolaidowu27@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  },
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
+}
